@@ -1,0 +1,40 @@
+.nav {
+    width: 800px;
+    height: 40px;
+    background-color: red;
+    border-radius: 5px;
+    line-height: 40px;
+    font-size: 14px;
+    color: white;
+    padding-left: 10px;
+  }
+  .plan {
+    width: 800px;
+    height: 40px;
+    display: flex;
+    color: black;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .plan div {
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #f1f1f1;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .plan input {
+    margin-left: 300px;
+    margin-right: 10px;
+  }
+  .plan .addbtn {
+    width: 40px;
+  }
+  .plan .active {
+    background: linear-gradient(to right, #ff0101, #ffff00);
+    color: white;
+  }
+  

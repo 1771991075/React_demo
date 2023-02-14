@@ -1,0 +1,25 @@
+.btmNav{
+    width: 100%;
+    height: 40px;
+    background-color: aliceblue;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-around;
+    line-height: 40px;
+    text-align: center;
+}
+.btmNav a{
+    text-decoration: none;
+    color: black;
+    flex: 1;
+}
+.active{
+    background-color: aqua;
+    color: white !important;
+}
+.infoNav{
+    display: flex;
+    justify-content: space-between;
+}

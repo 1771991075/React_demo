@@ -1,0 +1,36 @@
+.list {
+    width: 820px;
+    height: 300px;
+    overflow: auto;
+    margin-top: 10px;
+  }
+  .list .todo {
+    width: 800px;
+    height: 30px;
+    padding: 5px 0px 5px 0px;
+    border-bottom: 1px solid #999;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .list .todo .todo1 .did {
+    background-color: blue;
+    font-size: 12px;
+    padding: 5px;
+    color: white;
+    margin-right: 5px;
+  }
+  .list .todo .delbtn {
+    width: 40px;
+    display: none;
+    font-size: 12px;
+  }
+  .list .todo:hover {
+    background-color: #f1f1f1;
+  }
+  .list .todo:hover .delbtn {
+    display: block;
+  }
+  
