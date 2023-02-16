@@ -1,0 +1,25 @@
+.username{
+    margin: 10px;
+}
+.pwd{
+    margin: 10px;
+}
+.btnlogin{
+    display: flex;
+    justify-content: space-around;
+}
+.btn-success{
+    flex: 1;
+    margin: 10px;
+}
+.topNav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: rgb(248 249 250);
+    line-height: 50px;
+}
+h2{
+    line-height: 50px;
+}
