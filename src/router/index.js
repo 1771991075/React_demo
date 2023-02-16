@@ -1,12 +1,24 @@
+import { Route, Routes } from "react-router-dom";
 import elements from './elements'
-import { useRoutes } from 'react-router-dom'
+import Author from './Author'
 import React from 'react'
 
 export default function RouteDOM() {
-  let element = useRoutes(elements)
-  return (
-    <div>
-        {element}
-    </div>
-  )
+    return (
+        <div>
+            <Routes>
+                {
+                    elements.map((item, index) => {
+                        return <Route path={item.path} element={item.author ? <Author oldComponent={item.element} redircturl={item.path}></Author> : item.element} key={index}>
+                            {
+                                item.children && item.children.map((two, idx) => {
+                                    return <Route key={idx} path={two.path} element={two.author ? <Author oldComponent={two.element} redircturl={item.path + '/' + two.path}></Author> : two.element}></Route>
+                                })
+                            }
+                        </Route>
+                    })
+                }
+            </Routes>
+        </div>
+    )
 }
