@@ -1,13 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 import RouteDOM from './router'
 import './App.css'
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>
+export default function App() {
+  return (
+    <div>
         <RouteDOM/>
-      </div>
-    )
-  }
+    </div>
+  )
 }
