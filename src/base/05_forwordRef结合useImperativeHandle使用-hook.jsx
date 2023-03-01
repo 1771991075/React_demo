@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import Child from './component/Child'
+import Child from '../component/Child'
 
 export default function Home() {
     let ChildRef = useRef()
