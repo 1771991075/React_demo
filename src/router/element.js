@@ -1,6 +1,7 @@
 import Home from '../views/Home'
 import Cart from '../views/Cart'
 import Mine from '../views/Mine'
+import About from '../views/About'
 let element = [
     {
         path:'/',
@@ -13,6 +14,10 @@ let element = [
     {
         path:'/Mine',
         element:<Mine/>
+    },
+    {
+        path:'/about',
+        element:<About/>
     }
 ]
 
