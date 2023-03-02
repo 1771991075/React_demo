@@ -1,6 +1,6 @@
 let setPasswordActions = (password) =>{
     return {
-        type:'SER_PASSWORD',
+        type:'SET_PASSWORD',
         password:password
     }
 }
@@ -11,6 +11,7 @@ let setSexActions = (sex) =>{
         sex:sex
     }
 }
+
 
 export {
     setPasswordActions,

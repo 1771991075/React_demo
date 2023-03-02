@@ -1,6 +1,6 @@
 let defaultState = {
     name: 'admin',
-    age: 18,
+    password: 123456,
     sex: '男'
 }
 
