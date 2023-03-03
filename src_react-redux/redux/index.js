@@ -16,8 +16,8 @@ let reducer = combineReducers({
 
 // 需判断环境，仅在开发环境下添加以下一行代码
 // 如果安装了 redux devtools 扩展程序，则使用 redux devtools 扩展程序，否则使用 redux 中默认提供的 compose
-// const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
-// let store = createStore(reducer,composeEnhancers(applyMiddleware(reduxThunk)));
-let store = createStore(reducer,applyMiddleware(reduxThunk))
+let store = createStore(reducer,composeEnhancers(applyMiddleware(reduxThunk)));
+// let store = createStore(reducer,applyMiddleware(reduxThunk))
 export default store
